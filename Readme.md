@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Светлана Хайт](https://up.htmlacademy.ru/htmlcss/37/user/2325445).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
