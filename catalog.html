@@ -101,11 +101,130 @@
               </li>
             </ul>
           </fieldset>
-          
+
           <!-- price range - ??? -->
           <button class="filter-button apply-button" type="submit">Применить</button>
           <button class="filter-button reset-button" type="reset">Сбросить</button>
         </form>
+      </section>
+
+      <section class="catalog">
+        <h2 class="catalog-title">Найдено гостиниц: <span>38</span></h2>
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="low-to-high">Сначала дешёвые</option>
+          <option value="high-to-low">Сначала дорогие</option>
+          <option value="popular">По популярности</option>
+        </select>
+
+        <ul class="catalog-view">
+          <li class="catalog-view-type">
+            <a href="#" class="catalog-view-button">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="catalog-view-type">
+            <a href="#" class="catalog-view-button">
+              <span class="visually-hidden">Показать в виде слайдера</span>
+            </a>
+          </li>
+          <li class="catalog-view-type">
+            <a href="#" class="catalog-view-button">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="catalog-results-list">
+          <li class="housing-card">
+            <a class="housing-card-link" href="#">
+              <img class="housing-card-img" src="#" alt="Описание картинки">
+              <h3 class="housing-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p>
+              <span class="housing-card-type">Гостиница</span>
+              <span class="housing-card-price">От 4000 ₽</span>
+            </p>
+            <a class="housing-card-more" href="#">Подробнее</a>
+            <button class="housing-card-favourites" type="button">В избранное</button>
+            <div class="housing-card-rating">
+              <img src="#" alt="Описание картинки">
+              <span>Рейтинг: 8,5</span>
+            </div>
+          </li>
+
+          <li class="housing-card">
+            <a class="housing-card-link" href="#">
+              <img class="housing-card-img" src="#" alt="Описание картинки">
+              <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p>
+              <span class="housing-card-type">Гостиница</span>
+              <span class="housing-card-price">От 5000 ₽</span>
+            </p>
+            <a class="housing-card-more" href="#">Подробнее</a>
+            <button class="housing-card-favourites housing-card-favourites-active" type="button">В избранном</button>
+            <div class="housing-card-rating">
+              <img src="#" alt="Описание картинки">
+              <span>Рейтинг: 9,2</span>
+            </div>
+          </li>
+
+          <li class="housing-card">
+            <a class="housing-card-link" href="#">
+              <img class="housing-card-img" src="#" alt="Описание картинки">
+              <h3 class="housing-card-title">Desert Quail Inn</h3>
+            </a>
+            <p>
+              <span class="housing-card-type">Гостиница</span>
+              <span class="housing-card-price">От 2500 ₽</span>
+            </p>
+            <a class="housing-card-more" href="#">Подробнее</a>
+            <button class="housing-card-favourites" type="button">В избранное</button>
+            <div class="housing-card-rating">
+              <img src="#" alt="Описание картинки">
+              <span>Рейтинг: 6,9</span>
+            </div>
+          </li>
+
+          <li class="housing-card">
+            <a class="housing-card-link" href="#">
+              <img class="housing-card-img" src="#" alt="Описание картинки">
+              <h3 class="housing-card-title">GreenTree Inn</h3>
+            </a>
+            <p>
+              <span class="housing-card-type">Гостиница</span>
+              <span class="housing-card-price">От 1500 ₽</span>
+            </p>
+            <a class="housing-card-more" href="#">Подробнее</a>
+            <button class="housing-card-favourites" type="button">В избранное</button>
+            <div class="housing-card-rating">
+              <img src="#" alt="Описание картинки">
+              <span>Рейтинг: 5,0</span>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-skip">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
       </section>
 
       <section class="subscription subscription-inner">
