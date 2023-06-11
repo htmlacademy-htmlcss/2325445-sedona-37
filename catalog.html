@@ -35,7 +35,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Хочу сюда!</a>
+              <a class="nav-link button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +55,7 @@
           </ul>
 
           <h2 class="visually-hidden">Параметры фильтрации</h2>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-group">
               <legend class="filter-group-title">Инфраструктура</legend>
               <ul class="filter-list">
@@ -104,8 +104,10 @@
               </ul>
             </fieldset>
 
-            <button class="filter-button apply-button" type="submit">Применить</button>
-            <button class="filter-button reset-button" type="reset">Сбросить</button>
+            <div class="filter-buttons">
+              <button class="button button-alt" type="submit">Применить</button>
+              <button class="button reset-button" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
 
@@ -148,8 +150,8 @@
                 <span class="housing-card-type">Гостиница</span>
                 <span class="housing-card-price">От 4000 ₽</span>
               </p>
-              <a class="housing-card-more" href="#">Подробнее</a>
-              <button class="housing-card-favourites" type="button">В избранное</button>
+              <a class="housing-card-more button" href="#">Подробнее</a>
+              <button class="housing-card-favourites button button-alt" type="button">В избранное</button>
               <div class="housing-card-row">
                 <figure>
                   <img src="images/cards/4-stars.svg" width="90" height="17" alt="Четыре звезды" >
@@ -170,8 +172,8 @@
                 <span class="housing-card-type">Гостиница</span>
                 <span class="housing-card-price">От 5000 ₽</span>
               </p>
-              <a class="housing-card-more" href="#">Подробнее</a>
-              <button class="housing-card-favourites housing-card-favourites-active" type="button">В избранном</button>
+              <a class="housing-card-more button" href="#">Подробнее</a>
+              <button class="housing-card-favourites button button-alt button-active" type="button">В избранном</button>
               <div class="housing-card-row">
                 <figure>
                   <img src="images/cards/4-stars.svg" width="90" height="17" alt="Четыре звезды">
@@ -192,8 +194,8 @@
                 <span class="housing-card-type">Гостиница</span>
                 <span class="housing-card-price">От 2500 ₽</span>
               </p>
-              <a class="housing-card-more" href="#">Подробнее</a>
-              <button class="housing-card-favourites" type="button">В избранное</button>
+              <a class="housing-card-more button" href="#">Подробнее</a>
+              <button class="housing-card-favourites button button-alt" type="button">В избранное</button>
               <div class="housing-card-row">
                 <figure>
                   <img src="images/cards/3-stars.svg" width="66" height="17" alt="Три звезды">
@@ -214,8 +216,8 @@
                 <span class="housing-card-type">Гостиница</span>
                 <span class="housing-card-price">От 1500 ₽</span>
               </p>
-              <a class="housing-card-more" href="#">Подробнее</a>
-              <button class="housing-card-favourites" type="button">В избранное</button>
+              <a class="housing-card-more button" href="#">Подробнее</a>
+              <button class="housing-card-favourites button button-alt" type="button">В избранное</button>
               <div class="housing-card-row">
                 <figure>
                   <img src="images/cards/2-stars.svg" width="42" height="17" alt="Две звезды">
@@ -254,7 +256,7 @@
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscription-email" lang="en">Email</label>
             <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
-            <button class="subscription-button" type="submit">Подписаться</button>
+            <button class="subscription-button button button-alt" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
