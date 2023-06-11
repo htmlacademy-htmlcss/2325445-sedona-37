@@ -26,8 +26,6 @@ body {
   display: none;
 }
 
-/* Вопрос 1: стилизация кнопок */
-
 .button {
   font-family: inherit;
   font-weight: 700;
@@ -35,12 +33,15 @@ body {
   line-height: 20px;
 
   color: #FFFFFF;
-  background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.button-alt {
+.button-primary {
+  background-color: #756157;
+}
+
+.button-secondary {
   background-color: #82B3D3;
 }
 
@@ -48,7 +49,7 @@ body {
   background-color: #7DB54F;
 }
 
-.button.reset-button {
+.button-transparent {
   background-color: unset;
 }
 
@@ -80,36 +81,35 @@ body {
 }
 
 /* advantages */
-/* Вопрос 2: generic заголовки */
-/* Вопрос 3: header для секции */
-.advantages-header {
-  text-align: center;
-}
 
-.advantages-title {
+.section-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
-/* Вопролс 4: фон тайлов */
+.section-desc {
+  text-align: center;
+}
+
 .advantages-item {
   text-align: center;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item.advantages-item-illustrated {
+.advantages-item-light {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-dark {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-item-illustrated .advantages-item-title {
+.advantages-item-dark .advantages-item-title {
   color: #FFFFFF;
 }
 
@@ -125,20 +125,13 @@ body {
   text-align: center;
 }
 
-.services-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .services-item {
   text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.services-item:nth-child(2n+1) {
-  background-color: rgba(131, 179, 211, 0.12);
+.services-item-light{
+  background-color: unset;
 }
 
 .services-item-title {
@@ -153,14 +146,6 @@ body {
   text-align: center;
 }
 
-.search-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 /* subscription */
 .subscription {
   text-align: center;
@@ -172,10 +157,7 @@ body {
 }
 
 .subscription-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .subscription-field {
@@ -300,6 +282,6 @@ body {
   background-image: unset;
 }
 
-.subscription-inner .subscription-title {
+.subscription-inner .section-title {
   color: #000000;
 }
