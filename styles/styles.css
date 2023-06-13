@@ -64,7 +64,7 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto;                         
 }
 
 /* header */
@@ -80,6 +80,10 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+}
+
+.nav-logo {
+  margin-right: 30px;
 }
 
 .nav-list {
