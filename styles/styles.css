@@ -42,7 +42,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -93,10 +100,18 @@ body {
   margin-right: 30px;
 }
 
+.page-header-logo {
+  display: block;
+}
+
 .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 440px;
   margin: 0;
   padding: 0;
-  width: 440px;
+  list-style: none;
 }
 
 .nav-list-user {
@@ -105,12 +120,16 @@ body {
 }
 
 .nav-link {
+  display: block;
+  padding: 20px 16px;
   color: #000000;
   text-decoration: none;
 }
 
-.nav-link.button {
-  color: #FFFFFF
+.nav-list-user .nav-link {
+  padding: 22px 12px;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 /* main */
