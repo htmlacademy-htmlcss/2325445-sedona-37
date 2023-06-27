@@ -402,6 +402,8 @@ body {
 
 .filter-title {
   margin: 0;
+  margin-bottom: 8px;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -410,13 +412,25 @@ body {
 .breadcrumbs {
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  /* list-style: none; */
+  list-style-type: none;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
+  min-width: 13px;
+  min-height: 15px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -427,12 +441,17 @@ body {
 
 .filter-group {
   margin: 0;
+  margin-right: 70px;
   padding: 0;
+  min-width: 150px;
+  min-height: 160px;
   border: none;
 }
 
 .filter-group-title {
   padding: 0;
+  margin-bottom: 32px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -445,28 +464,43 @@ body {
 }
 
 .filter-item {
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 23px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.reset-button {
+  margin-top: 32px;
 }
 
 /* catalog */
 .catalog {
-  margin: 0 auto;
+  margin: 50px auto 60px;
   width: 1060px;
 }
 
 .catalog-row {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .catalog-title {
   margin: 0;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -481,20 +515,48 @@ body {
   color: #333333;
 }
 
-/* catalog card */
+.catalog-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  width: 160px;
+
+  list-style-type: none;
+}
+
+.catalog-view-type {
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+/* cards */
 .catalog-results-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
   column-gap: 20px;
-  width: 1060px;
+
   margin: 0 auto;
+  margin-bottom: 80px;
   padding: 0;
+  width: 1060px;
+
   list-style-type: none;
 }
 
 .housing-card {
   padding: 20px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .housing-card-link {
@@ -525,17 +587,26 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 400px;
-
   list-style-type: none;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 18px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
   color: #FFFFFF;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
