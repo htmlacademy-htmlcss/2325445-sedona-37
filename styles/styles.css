@@ -448,6 +448,10 @@ body {
   border: none;
 }
 
+.filter-group:last-child {
+  margin-right: 0;
+}
+
 .filter-group-title {
   padding: 0;
   margin-bottom: 32px;
