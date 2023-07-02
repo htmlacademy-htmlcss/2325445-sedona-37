@@ -111,7 +111,7 @@ body {
   width: 440px;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .nav-list-user {
@@ -139,6 +139,9 @@ body {
 
 /* hero */
 .hero {
+  display: flex;
+  justify-content: center;
+
   color: #FFFFFF;
   background-color: rgba(129, 179, 211, 0.6);
   background-image: url(../images/hero/hero-bg.jpg);
@@ -146,15 +149,14 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero figure {
-  margin: 0;
-}
-
 .hero-text {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 51px;
   padding-bottom: 82px;
+}
+
+.hero-text img {
+  display: block;
 }
 
 /* advantages */
@@ -191,7 +193,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .advantages-item {
@@ -261,7 +263,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .services-item {
@@ -362,7 +364,7 @@ body {
   margin: 0;
   padding: 0;
 
-  list-style-type: none;
+  list-style: none;
 }
 
 .footer-social-button {
@@ -387,6 +389,8 @@ body {
 .filter {
   padding-top: 35px;
   padding-bottom: 70px;
+  box-sizing: border-box;
+  min-height: 412px;
 
   color: #FFFFFF;
   background-color: rgba(129, 179, 211, 0.6);
@@ -414,7 +418,7 @@ body {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 
   font-size: 16px;
   line-height: 21px;
@@ -437,6 +441,7 @@ body {
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-group {
@@ -448,7 +453,7 @@ body {
   border: none;
 }
 
-.filter-group:last-child {
+.filter-group:last-of-type {
   margin-right: 0;
 }
 
@@ -464,7 +469,7 @@ body {
 .filter-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .filter-item {
@@ -529,7 +534,7 @@ body {
   padding: 0;
   width: 160px;
 
-  list-style-type: none;
+  list-style: none;
 }
 
 .catalog-view-type {
@@ -552,7 +557,7 @@ body {
   padding: 0;
   width: 1060px;
 
-  list-style-type: none;
+  list-style: none;
 }
 
 .housing-card {
@@ -591,7 +596,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .pagination-item:not(:last-child) {
