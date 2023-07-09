@@ -177,10 +177,15 @@ body {
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   color: #000000;
   text-decoration: none;
+}
+
+.nav-link-current {
+  border-bottom: 2px solid #756257;
 }
 
 .nav-list-user .nav-link {
