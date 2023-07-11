@@ -178,6 +178,36 @@
           </a>
         </div>
       </footer>
+            <label class="popup-date-label" for="arrival-date">
+              <span class="popup-date-label-text">Дата Заезда:</span>
+              <input class="popup-date-arrival" type="text" placeholder="Укажите дату" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+            </label>
+            <label class="popup-date-label" for="departure-date">
+              <span class="popup-date-label-text">Дата Выезда:</span>
+              <input class="popup-date-arrival" type="text" placeholder="Укажите дату" id="departure-date" name="departure-date" value="1 сентября 2023">
+            </label>
+            <div class="guest-count-wrapper">
+              <label class="popup-guests-label" for="adults-count">Взрослые:</label>
+              <input class="guest-count" type="number" value="2" min="0" max="10" id="adults-count" name="adults-count">
+            </div>
+            <div class="guest-count-wrapper">
+              <span class="popup-guests-label">
+                <label class="popup-guests-label" for="kids-count">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff"/>
+                    </svg>
+                    <!-- <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> -->
+                  </button>
+                </span>
+              </span>
+              <input class="guest-count" type="number" value="2" min="0" max="10" id="adults-count" name="adults-count">
+            </div>
+            <button class="button button-secondary popup-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </dialog>
     </div>
   </body>
 </html>

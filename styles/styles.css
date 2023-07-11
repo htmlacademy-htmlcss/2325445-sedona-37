@@ -1095,15 +1095,15 @@ body {
 }
 
 .catalog-card-view .catalog-view-button::before {
-  background-image: url(../images/card-view.svg);
+  background-image: url(../images/cards/card-view.svg);
 }
 
 .catalog-slide-view .catalog-view-button::before {
-  background-image: url(../images/slide-view.svg);
+  background-image: url(../images/cards/slide-view.svg);
 }
 
 .catalog-list-view .catalog-view-button::before {
-  background-image: url(../images/list-view.svg);
+  background-image: url(../images/cards/list-view.svg);
 }
 
 .catalog-view-button-active {
@@ -1269,3 +1269,27 @@ body {
 .subscription-inner .section-title {
   color: #000000;
 }
+
+/* modal */
+.popup-search {
+  display: block; /* wip */
+}
+
+.popup-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form {
+  display: grid;
+  grid-template-columns: 247px 242px;
+}
+
+.popup-date-label {
+  grid-column: 1 / -1;
+}
+
+.popup-button {
+  grid-column: 1 / -1;
+}
+
