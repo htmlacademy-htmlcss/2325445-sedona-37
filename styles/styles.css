@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover:not(.button:disabled) {
   background-color: #615048;
 }
 
@@ -90,7 +90,7 @@ body {
   outline: none;
 }
 
-.button:active {
+.button:active:not(.button:disabled) {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
@@ -103,7 +103,7 @@ body {
   background-color: #82B3D3;
 }
 
-.button-secondary:hover {
+.button-secondary:hover:not(.button-secondary:disabled) {
   background-color: #68A2CA;
 }
 
@@ -111,7 +111,7 @@ body {
   background-color: #68A2CA;
 }
 
-.button-secondary:active {
+.button-secondary:active:not(.button-secondary:disabled) {
   background-color: #68A2CA;
 }
 
@@ -123,7 +123,7 @@ body {
   background-color: #7DB54F;
 }
 
-.button-active:hover {
+.button-active:hover:not(.button-active:disabled) {
   background-color: #6C9E42;
 }
 
@@ -131,7 +131,7 @@ body {
   background-color: #6C9E42;
 }
 
-.button-active:active {
+.button-active:active:not(.button-active:disabled) {
   background-color: #7DB54F;
 }
 
@@ -143,7 +143,7 @@ body {
   background-color: unset;
 }
 
-.button-transparent:hover {
+.button-transparent:hover:not(.button-transparent:disabled) {
   color: rgba(255, 255, 255, 0.6);
   background-color: unset;
 }
@@ -154,11 +154,15 @@ body {
 
 .button-transparent:focus-visible {
   outline: 3px solid #83B3D3;
-  /* outline-offset: -1px; */
 }
 
-.button-transparent:active {
+.button-transparent:active:not(.button-transparent:disabled) {
   color: rgba(255, 255, 255, 0.3);
+  background-color: unset;
+}
+
+.button-transparent:disabled {
+  color: rgba(255, 255, 255, 0.1);
   background-color: unset;
 }
 
@@ -211,6 +215,11 @@ body {
   padding: 20px 16px;
   color: #000000;
   text-decoration: none;
+}
+
+.button-modal-search {
+  border: none;
+  background-color: unset;
 }
 
 .nav-link-current {
@@ -1000,15 +1009,6 @@ body {
   text-transform: uppercase;
 }
 
-/* .select-control {
-  width: 292px;
-  padding: 14px 20px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-} */
-
 .catalog-select {
   width: 292px;
 }
@@ -1024,10 +1024,24 @@ body {
   background-color: #FFFFFF;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+}
+
+.select-control:hover:not(.select-control:disabled) {
+  border-color: #68A2CA;
+}
+
+.select-control:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
 }
 
 .catalog-view {
