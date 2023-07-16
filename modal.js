@@ -1,10 +1,14 @@
-let openButton = document.querySelector('.open-modal-search');
+let openButtons = document.querySelectorAll('.open-modal-search, .search-button');
 let closeButton = document.querySelector('.modal-close-button');
 let dialog = document.querySelector('.modal-search');
 
-openButton.onclick = function () {
-  dialog.showModal();
-};
+console.log(openButtons);
+for (let openButton of openButtons) {
+  openButton.onclick = function () {
+    dialog.showModal();
+  };
+}
+
 
 closeButton.onclick = function () {
   dialog.close();
