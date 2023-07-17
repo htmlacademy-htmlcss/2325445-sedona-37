@@ -321,18 +321,19 @@ body {
   color: #ffffff;
   background-color: rgba(129, 179, 211, 0.6);
   background-image: url("../images/hero/hero-bg.jpg");
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero::before {
   content: "";
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 57px;
-  bottom: 0;
   background-image: url("../images/hero/hero-divider.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-image {
@@ -346,6 +347,10 @@ body {
 }
 
 /* advantages */
+.advantages {
+  padding-top: 69px;
+}
+
 .section-title {
   margin: 0 auto;
   width: 630px;
@@ -360,12 +365,11 @@ body {
 
 .section-desc {
   margin: 0 auto;
-  width: 655px;
+  width: 660px;
   text-align: center;
 }
 
 .advantages-title {
-  margin-top: 69px;
   margin-bottom: 25px;
 }
 
@@ -465,8 +469,11 @@ body {
 }
 
 /* services */
+.services {
+  padding-top: 64px;
+}
+
 .services-title {
-  margin-top: 64px;
   margin-bottom: 20px;
 }
 
@@ -654,11 +661,10 @@ body {
           column-gap: 70px;
 
   box-sizing: border-box;
-  width: 1060px;
+  width: 1200px;
   min-height: 120px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 40px 70px 30px;
 
   color: #000000;
 }
@@ -1082,7 +1088,8 @@ body {
 
 /* catalog */
 .catalog {
-  margin: 50px auto 60px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
   width: 1060px;
 }
 
@@ -1473,7 +1480,7 @@ body {
 
 .modal-search {
   width: 717px;
-  padding: 64px 70px;
+  padding: 0;
   border: none;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -1492,6 +1499,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 64px 70px;
 }
 
 .modal-title {
@@ -1699,14 +1707,14 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: -18px;
+  top: 64px;
+  right: calc(-18px + 70px);
 
+  width: 52px;
+  height: 52px;
   padding: 0;
   padding-top: 3px;
   padding-left: 2px;
-  width: 52px;
-  height: 52px;
 
   background-color: #f2f2f2;
   border: none;
